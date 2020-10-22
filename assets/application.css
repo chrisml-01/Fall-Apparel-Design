@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    color: #433E38;
+
+    font-family: 'Heebo', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.site-wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    position: relative;
+}
+.header-nav{
+    display: flex;
+    margin: 20px 0;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1;
+}
+
+
+.main-menu a, .cart-menu a{
+    padding: 30px;
+    color: #433E38;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.main-menu a:hover, .cart-menu a:hover{
+    text-decoration: none;
+    color: #433E38;
+    /* background-color: #433E38;
+    color: #F5F5F5;
+    fill:  #F5F5F5; */
+}
+
+.cart-menu svg{
+    width: 20px;
+    height: 20px;
+    fill: #433E38;
+}
+
+.search-form{
+    border-bottom: #433E38 1px solid;
+}
+.search-form input[type=search]{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    padding: 0 10px;
+}
+
+.search-form button{
+    background-color: transparent;
+    outline: none;
+    border:none;
+    padding: 5px;
+}
+
+
+.hero-img{
+    height: 900px;
+    background-position: center;
+    background-size: cover;
+    image-rendering: auto;
+}
+
+.social-medias{
+    position: absolute;
+    top: 45%;
+    right: 15%;
+}
+
+.social-medias a{
+    display: block;
+    padding: 3px 0;
+}
+
+.featured-products{
+    padding: 42px 0;
+    position: relative;
+}
+
+.products-container{
+    display: flex;
+    margin-left: 100px;
+}
+
+.featured-text h3{
+    width: 50%;
+    font-size: 32px;
+    font-weight: 600; 
+}
+
+.product-box{
+    padding: 20px;
+    border: white 1px solid;
+}
+
+.products figure{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.products{
+    padding-right: 30px;
+}
+.featured-text{
+    position: absolute;
+    top: 20%;
+    z-index: 3;
+   
+}
+
+.featured-text svg{
+    width: 48px;
+    height: 48px;
+    margin-top: 5px;
+    margin-left: 20px;
+    fill: #433E38;
+
+}
+.product-img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;   
+    image-rendering: auto;
+}
+
+.product-img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;   
+    image-rendering: auto;
+    z-index: -1;
+}
+
+.product-box:hover .product-img{
+    animation: fadeIn 2s;
+    opacity: 0;
+}
+.product-box:hover{
+    border: #433E38 1px solid;
+    
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-between;
+}
+.product-info h6{
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+
+.btnAddToCart{
+    width: 100%;
+    text-align: center;
+    background-color: #433E38;
+    color: #F5F5F5;
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.footer-container{
+    margin: 10px 20px;
+    height: auto;
+    padding: 30px;
+    border:  #433E38 1px solid;   
+    background-color:  #F5F5F5;
+}
+
+.footer-container h6{
+    font-weight: 400;  
+}
+
+.footer-container a{
+    display: block;
+    color:  #433E38;
+    padding: 3px 0;
+}
+
+
+.footer-container a:hover{
+    color:  #433E38;
+}
+
+.newsletter-form{
+    border: #433E38 1px solid;
+    width: 320px;
+    margin: 5px 0;
+}
+.newsletter-form input[type=text]{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 85%;
+    padding: 10px;
+    
+}
+.newsletter-form button{
+    border-left: #433E38 1px solid !important;
+    border: none;
+    padding: 10px 15px;
+}
+
+.copyright-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+.footer-social-media{
+    display: flex;
+}
+
+.footer-social-media a{
+    padding: 0 3px;
+}
+.footer-social-media svg{
+    width: 20px;
+    height: 20px;
+}
+
+svg:hover{
+    fill:  #433E38;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+
